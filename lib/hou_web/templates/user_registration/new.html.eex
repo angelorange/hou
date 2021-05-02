@@ -1,4 +1,4 @@
-<h1>Register</h1>
+<h1>Registrar</h1>
 
 <%= form_for @changeset, Routes.user_registration_path(@conn, :create), fn f -> %>
   <%= if @changeset.action do %>
@@ -16,11 +16,11 @@
   <%= error_tag f, :password %>
 
   <div>
-    <%= submit "Register" %>
+    <%= submit "Registrar" %>
   </div>
 <% end %>
 
 <p>
-  <%= link "Log in", to: Routes.user_session_path(@conn, :new) %> |
-  <%= link "Forgot your password?", to: Routes.user_reset_password_path(@conn, :new) %>
+  <%= link "Login", to: Routes.user_session_path(@conn, :new) %> |
+  <%= link "Esqueceu a senha?", to: Routes.user_reset_password_path(@conn, :new) %>
 </p>
