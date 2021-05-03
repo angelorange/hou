@@ -7,12 +7,19 @@
     <%= csrf_meta_tag() %>
     <%= live_title_tag assigns[:page_title] || "Hou", suffix: " · Phoenix Framework" %>
     <link phx-track-static rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
     <script defer phx-track-static type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <script type='text/javascript'>document.addEventListener('DOMContentLoaded', function () {window.setTimeout(document.querySelector('svg').classList.add('animated'),1000);})</script>
   </head>
   <body>
     <header>
       <section class="container">
-        <nav role="navigation">
+
+        <nav role="navigation" class="nav">
+          <div class="header_img">
+            <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG34.png" >
+          </div>
           <%= render "_user_menu.html", assigns %>
         </nav>
       </section>
