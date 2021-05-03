@@ -113,24 +113,20 @@ html {
   }
 
   .header_button1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-right: 0.8rem;
   }
 
   .header_button2 a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 30px;
 
-    width: 8rem;
+    width: 7rem;
     padding: 0.8rem;
     margin-left: 0.8rem;
   }
 
   .phx-hero {
-    height: 80vh;
-    text-align: center;
-    /* background: #d4d4d44b; */
-    border-radius: 0.5rem;
     padding: 2em 2em 1em;
   }
 
@@ -146,6 +142,14 @@ html {
 
   .phx-hero {
     padding: 2em 3em 1em;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 1.5rem;
   }
 
   .img_home {
@@ -164,6 +168,14 @@ html {
 
   .phx-hero {
     padding: 2em 5em 1em;
+  }
+
+  .home-text h1 {
+    font-size: 3rem;
+  }
+
+  .home-text p {
+    font-size: 2rem;
   }
 
   .img_home {

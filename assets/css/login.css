@@ -15,7 +15,7 @@
 
   padding: 1rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 1rem; */
 }
 
 .header_home {
@@ -86,13 +86,13 @@
 }
 
 .home-text h1 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 
 .home-text p {
   color: #fecf3b;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
 
   padding-top: 1rem;
