@@ -2,9 +2,7 @@
 
 <%= form_for @changeset, Routes.user_reset_password_path(@conn, :update, @token), fn f -> %>
   <%= if @changeset.action do %>
-    <div class="alert alert-danger">
-      <p>Oops, something went wrong! Please check the errors below.</p>
-    </div>
+
   <% end %>
 
   <%= label f, :password, "New password" %>
@@ -24,3 +22,8 @@
   <%= link "Register", to: Routes.user_registration_path(@conn, :new) %> |
   <%= link "Log in", to: Routes.user_session_path(@conn, :new) %>
 </p>
+
+<div class="alert alert-danger">
+      <p>
+          Ops, algo deu errado! Verifique os erros abaixo.</p>
+    </div>

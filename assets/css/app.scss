@@ -73,10 +73,12 @@ body {
 
 /* Alerts and form errors */
 .alert {
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 5px;
+  margin-top: 1rem;
   border: 1px solid transparent;
   border-radius: 4px;
+
+  font-size: 0.8rem;
 }
 .alert-info {
   color: #8c318f;
@@ -115,15 +117,15 @@ body {
   }
 
   .header_button1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-right: 0.8rem;
   }
 
   .header_button2 a {
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 30px;
 
-    width: 7rem;
+    width: 6rem;
     padding: 0.8rem;
     margin-left: 0.8rem;
   }
