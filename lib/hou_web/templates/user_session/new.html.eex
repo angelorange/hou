@@ -1,4 +1,9 @@
-<h1>Login</h1>
+<div class="login_box">
+
+<h1>Entrar</h1>
+<p class="login_text">Sua mãe é nossa heheheeh</p>
+
+<div class="input_box">
 
 <%= form_for @conn, Routes.user_session_path(@conn, :create), [as: :user], fn f -> %>
   <%= if @error_message do %>
@@ -10,18 +15,28 @@
   <%= label f, :email %>
   <%= email_input f, :email, required: true %>
 
-  <%= label f, :password %>
+<div class="login_pass">
+<%= label f, :password %>
   <%= password_input f, :password, required: true %>
 
-  <%= label f, :remember_me, "Keep me logged in for 60 days" %>
+  <%= label f, :remember_me, "" %>
   <%= checkbox f, :remember_me %>
+  </div>
 
-  <div>
-    <%= submit "Login" %>
+
+
+  <div class="login_button">
+    <%= submit "Entrar" %>
   </div>
 <% end %>
 
-<p>
-  <%= link "Registrar", to: Routes.user_registration_path(@conn, :new) %> |
+</div>
+
+
+<p class="login_reg-cad">
+  <%= link "Registrar", to: Routes.user_registration_path(@conn, :new)%>
   <%= link "Esqueceu a senha?", to: Routes.user_reset_password_path(@conn, :new) %>
 </p>
+
+
+</div>

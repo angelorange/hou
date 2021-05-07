@@ -1,5 +1,9 @@
-<h1>Registrar</h1>
+<div class="login_box">
 
+<h1>Registrar</h1>
+<p class="login_text">Sua mãe é nossa heheheeh</p>
+
+<div class="input_box">
 <%= form_for @changeset, Routes.user_registration_path(@conn, :create), fn f -> %>
   <%= if @changeset.action do %>
     <div class="alert alert-danger">
@@ -10,17 +14,20 @@
   <%= label f, :email %>
   <%= email_input f, :email, required: true %>
   <%= error_tag f, :email %>
-
+<div class="login_pass">
   <%= label f, :password %>
   <%= password_input f, :password, required: true %>
   <%= error_tag f, :password %>
-
-  <div>
+<div>
+  <div class="login_button">
     <%= submit "Registrar" %>
   </div>
 <% end %>
+</div>
 
-<p>
-  <%= link "Login", to: Routes.user_session_path(@conn, :new) %> |
+<p class="login_reg-cad">
+  <%= link "Login", to: Routes.user_session_path(@conn, :new) %>
   <%= link "Esqueceu a senha?", to: Routes.user_reset_password_path(@conn, :new) %>
 </p>
+
+</div>
