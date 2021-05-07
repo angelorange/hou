@@ -135,6 +135,16 @@ body {
   .img_home {
     padding: 0 4rem;
   }
+
+  /*--------*/
+}
+@media (max-width: 768px) {
+  .login_box {
+    webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    background: #fff;
+  }
 }
 
 @media (min-width: 1024px) {
