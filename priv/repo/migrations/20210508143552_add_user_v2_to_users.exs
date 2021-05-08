@@ -2,7 +2,7 @@ defmodule Hou.Repo.Migrations.AddUserV2ToUsers do
   use Ecto.Migration
 
   def change do
-    alter_table(:users) do
+    alter table(:users) do
       add :full_name, :string
       add :age, :string
       add :gender, :string
