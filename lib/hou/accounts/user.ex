@@ -8,6 +8,13 @@ defmodule Hou.Accounts.User do
     field :password, :string, virtual: true
     field :hashed_password, :string
     field :confirmed_at, :naive_datetime
+    field :full_name, :string
+    field :age, :string
+    field :gender, :string
+    field :city, :string
+    field :state, :string
+    field :address, :string
+    field :verified, :boolean
 
     timestamps()
   end
