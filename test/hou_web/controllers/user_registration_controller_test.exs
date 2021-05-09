@@ -7,9 +7,9 @@ defmodule HouWeb.UserRegistrationControllerTest do
     test "renders registration page", %{conn: conn} do
       conn = get(conn, Routes.user_registration_path(conn, :new))
       response = html_response(conn, 200)
-      assert response =~ "<h1>Register</h1>"
-      assert response =~ "Log in</a>"
-      assert response =~ "Register</a>"
+      assert response =~ "<h1>Registrar</h1>"
+      assert response =~ "Login</a>"
+      assert response =~ "Registrar<"
     end
 
     test "redirects if already logged in", %{conn: conn} do
@@ -46,7 +46,7 @@ defmodule HouWeb.UserRegistrationControllerTest do
         })
 
       response = html_response(conn, 200)
-      assert response =~ "<h1>Register</h1>"
+      assert response =~ "<h1>Registrar</h1>"
       assert response =~ "must have the @ sign and no spaces"
       assert response =~ "should be at least 12 character"
     end
