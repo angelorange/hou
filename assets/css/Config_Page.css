@@ -1,0 +1,60 @@
+.container_config {
+  width: 15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.9rem;
+
+  webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.container_config label {
+  font-size: 0.8rem;
+}
+
+.container_config input {
+  border-radius: 5px;
+  border: 1px solid black;
+
+  margin: 0.4rem 0 0.4rem;
+  padding: 0.4rem;
+}
+
+.container_config button {
+  background-color: #fecf3b;
+  border: none;
+  padding: 0.4rem;
+
+  font-size: 0.7rem;
+
+  border-radius: 5px;
+}
+
+.button_email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+.titulo_config {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+
+  text-align: center;
+}
+
+.container_config h3 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.container_config form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}

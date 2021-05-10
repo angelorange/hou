@@ -2,6 +2,7 @@
 @import "./phoenix.css";
 @import "./home.css";
 @import "./Login_Page.css";
+@import "./Config_Page.css";
 
 * {
   margin: 0;
@@ -80,31 +81,38 @@ body {
 
   font-size: 0.8rem;
 }
+
 .alert-info {
   color: #8c318f;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
+
 .alert-warning {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
 }
+
 .alert-danger {
   color: #a94442;
   background-color: #f2dede;
   border-color: #ebccd1;
 }
+
 .alert p {
   margin-bottom: 0;
 }
+
 .alert:empty {
   display: none;
 }
+
 .invalid-feedback {
   color: #a94442;
-  display: block;
-  margin: -1rem 0 2rem;
+  display: inline-block;
+  margin: 5px 0 0;
+  // background-color: blue;
 }
 
 @media (min-width: 768px) {
@@ -168,6 +176,20 @@ body {
 
   .img_home {
     padding: 0 10rem;
+  }
+
+  /*configurção*/
+  #container_config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container_config {
+    width: 15rem;
+    height: 20rem;
+
+    margin: 2rem;
   }
 }
 
